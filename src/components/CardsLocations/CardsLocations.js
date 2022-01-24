@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const CardsAllEpisodes = (props) => {
-  const { episode } = props;
+  const { Locations } = props;
 
   return (
     <div
@@ -9,20 +9,19 @@ const CardsAllEpisodes = (props) => {
       style={{ width: "16rem" }}
     >
       <div className="card-header bg-success">
-        <h4 className="text-white">{episode.episode}</h4>
+        <h4 className="text-white">{Locations.type}</h4>
       </div>
       <div className="card-body bg-secondary">
-        <h5 className="card-title">{episode.name}</h5>
+        <h5 className="card-title">{Locations.name}</h5>
         <Link
-          to={"/clase39/episode/" + episode.id}
-          key={episode.id}
+          to={"/clase39/locations/" + Locations.id}
           className="btn btn-primary mt-2"
         >
           Ver Episodio
         </Link>
       </div>
       <div className="card-footer text-muted bg-success">
-        <h4 className="text-white">{episode.air_date}</h4>
+        <h4 className="text-white">{Locations.dimension}</h4>
       </div>
     </div>
   );

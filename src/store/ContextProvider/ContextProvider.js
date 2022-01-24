@@ -4,6 +4,13 @@ import { GetApi } from "../../GlobalHooks/HTTP";
 export const Context = createContext(null);
 
 const ThisProvider = ({ children }) => {
-  return <Context.Provider value={{}}>{children}</Context.Provider>;
+  const [search, setSearch] = useState("");
+
+  
+  return (
+    <Context.Provider value={{ search, setSearch }}>
+      {children}
+    </Context.Provider>
+  );
 };
 export default ThisProvider;

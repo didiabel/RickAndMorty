@@ -9,13 +9,13 @@ export const GetApi = (URL)=>{
 
     const getData = async()=>{
         let response= await axios.get(URL)
+        
         setData(response.data)
         setLoading(false)
     }
     
     useEffect(()=>{
-        getData();
-        //alert(URL);
+        getData()
     },[])
 
     return[data, loading, getData,setData]

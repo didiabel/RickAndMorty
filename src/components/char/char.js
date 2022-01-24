@@ -22,7 +22,7 @@ const Char = (props) => {
               <p className="card-title">Gender {data.gender}</p>
               <p className="card-title">Location: {data.location.name}</p>
               <p className="card-title">Origin: {data.origin.name}</p>
-              <Link to={'/clase39/info/'+data.id} itemProp={data}><button className="btn btn-primary">Info</button></Link>
+              <Link to={'/clase39/info/'+data.id} key={data.id} itemProp={data}><button className="btn btn-primary">Info</button></Link>
             </div>
           </div>
           }

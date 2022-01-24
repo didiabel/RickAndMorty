@@ -33,19 +33,19 @@ const Episode = () => {
              <h3 className="text-center">{data.air_date}</h3>
              </div>
                  </div>
-                 <div className="d-flex flex-wrap justify-content-between mt-5">
-                 <Link to={'/clase39/'}><button className="btn btn-primary">Volver</button></Link>
+                 <div className="d-flex justify-content-around mt-5">
+                 <Link to={'/clase39/'} ><button className="btn btn-primary">Volver</button></Link>
                  <button className="btn btn-success h-25" onClick={()=>getEpisodes()}>Characters</button>
                  <button className={characters ? ' btn btn-danger' : 'd-none'} onClick={()=>hideEpisodes()}> Esconder</button>
                  </div>
-                 <div className={characters? "d-flex justify-content-around " : 'd-none'}>
-        <div className="d-flex flex-wrap">
+                 <div className={characters? "container d-flex flex-wrap  border mt-4" : 'd-none'}>
+        
              {data.characters.map(char => {
                  return(
-                 <Char Url={char}/>)
+                 <Char key={char} Url={char}/>)
              })}
             
-             </div>
+            
              </div>
          
         </div>

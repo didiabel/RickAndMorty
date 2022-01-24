@@ -4,6 +4,8 @@ import { useState } from "react/cjs/react.development";
 import { GetApi } from "../../GlobalHooks/HTTP";
 import { Link } from "react-router-dom";
 import { BarWave } from "react-cssfx-loading/lib";
+
+
 const Informacion = () => {
     
     const {id} = useParams()
@@ -18,6 +20,7 @@ const Informacion = () => {
     const hideEpisodes =()=>{
         setEpisodes(false)
     }
+    console.log(data);
 
     return ( 
          <div className="container border-end border-5 border-bottom rounded bg-light">
@@ -48,8 +51,8 @@ const Informacion = () => {
          {data.episode.map(ep => {
           let nro = ep.replace('https://rickandmortyapi.com/api/episode/','')
           return(
-              <Link to={'/clase39/episode/'+nro}>
-              <button key={ep.id} className={episodes ? 'm-4 btn btn-warning' : 'd-none'}>{'Episode: '+ nro}</button>
+              <Link to={'/clase39/episode/'+nro} key={nro}>
+              <button key={nro} className={episodes ? 'm-4 btn btn-warning' : 'd-none'}>{'Episode: '+ nro}</button>
               </Link>)
               
           })}

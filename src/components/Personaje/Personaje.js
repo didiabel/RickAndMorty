@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 const Personaje = (props) => {
 
     const {cadaUno} = props
-
     return ( 
             <div className="card m-4" style={{width: "16rem"}}>
             <img className="card-img-top" src={cadaUno.image} alt="Card image cap"/>
