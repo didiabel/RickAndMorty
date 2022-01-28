@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 import { GetApi } from "../../GlobalHooks/HTTP";
 import { Link } from "react-router-dom";
 import { BarWave } from "react-cssfx-loading/lib";
