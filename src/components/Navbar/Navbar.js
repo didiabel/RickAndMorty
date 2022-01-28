@@ -4,7 +4,6 @@ import { Context } from "../../store/ContextProvider/ContextProvider";
 
 const Navbar = () => {
   const { search, setSearch } = useContext(Context);
-  console.log(search);
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-dark d-flex ">

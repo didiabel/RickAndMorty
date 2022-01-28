@@ -1,6 +1,5 @@
-import { useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 import { GetApi } from "../../GlobalHooks/HTTP";
 import { Link } from "react-router-dom";
 import { BarWave } from "react-cssfx-loading/lib";
@@ -20,7 +19,6 @@ const Informacion = () => {
     const hideEpisodes =()=>{
         setEpisodes(false)
     }
-    console.log(data);
 
     return ( 
          <div className="container border-end border-5 border-bottom rounded bg-light">

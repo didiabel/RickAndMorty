@@ -1,13 +1,11 @@
 import axios from "axios";
 import { useContext, useEffect, useState } from "react";
 import BarWave from "react-cssfx-loading/lib/BarWave";
-import { Link } from "react-router-dom";
-import { GetApi } from "../../GlobalHooks/HTTP";
 import { Context } from "../../store/ContextProvider/ContextProvider";
 import CardsAllEpisodes from "../CardsAllEpisodes";
 
 const AllEpisodes = () => {
-    const {search, setSearch} = useContext(Context)
+    const {search} = useContext(Context)
 
     const [pagInicioNro, setPagInicioNro] = useState(1);
     const [dataToShow, setDataToShow] = useState([]);

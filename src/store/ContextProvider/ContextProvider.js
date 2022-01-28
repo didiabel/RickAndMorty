@@ -1,5 +1,4 @@
 import { createContext, useState } from "react";
-import { GetApi } from "../../GlobalHooks/HTTP";
 
 export const Context = createContext(null);
 

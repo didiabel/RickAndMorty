@@ -5,7 +5,7 @@ import axios from "axios";
 import Personaje from "../Personaje";
 
 const Personajes = () => {
-    const {search, setSearch} = useContext(Context)
+    const {search} = useContext(Context)
   const [pagInicioNro, setPagInicioNro] = useState(1);
   const [dataToShow, setDataToShow] = useState([]);
   const [loading, setLoading] = useState(false);
