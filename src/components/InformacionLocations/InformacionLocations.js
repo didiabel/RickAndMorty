@@ -47,7 +47,7 @@ const Informacion = () => {
          {data.residents.map(ep => {
           let nro = ep.replace('https://rickandmortyapi.com/api/character/','')
           return(
-              <Link to={'/clase39/info/'+nro} key={ep}>
+              <Link to={'/RickAndMorty/info/'+nro} key={ep}>
               <button  className={episodes ? 'm-4 btn btn-warning' : 'd-none'}>{'Character: '+ nro}</button>
               </Link>)
               

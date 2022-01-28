@@ -14,10 +14,10 @@ const CardsAllEpisodes = (props) => {
       <div className="card-body bg-secondary">
         <h5 className="card-title">{Locations.name}</h5>
         <Link
-          to={"/clase39/locations/" + Locations.id}
+          to={"/RickAndMorty/locations/" + Locations.id}
           className="btn btn-primary mt-2"
         >
-          Ver Episodio
+          Ver Location
         </Link>
       </div>
       <div className="card-footer text-muted bg-success">

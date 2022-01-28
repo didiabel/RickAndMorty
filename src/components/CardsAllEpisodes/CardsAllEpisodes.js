@@ -14,7 +14,7 @@ const CardsAllEpisodes = (props) => {
       <div className="card-body bg-secondary">
         <h5 className="card-title">{episode.name}</h5>
         <Link
-          to={"/clase39/episode/" + episode.id}
+          to={"/RickAndMorty/episode/" + episode.id}
           key={episode.id}
           className="btn btn-primary mt-2"
         >

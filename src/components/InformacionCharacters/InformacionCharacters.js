@@ -42,7 +42,7 @@ const Informacion = () => {
              <h5 className="text-center">{data.location.name}</h5>
 
              <div className="d-flex flex-wrap justify-content-between">
-                 <Link to={'/clase39/'}><button className="btn btn-primary">Volver</button></Link>
+                 <Link to={'/RickAndMorty/'}><button className="btn btn-primary">Volver</button></Link>
                  <button className="btn btn-success h-25" onClick={()=>getEpisodes()}>Episodios</button>
                  <button className={episodes ? ' btn btn-danger' : 'd-none'} onClick={()=>hideEpisodes()}> Esconder</button>
                  </div>
@@ -51,7 +51,7 @@ const Informacion = () => {
          {data.episode.map(ep => {
           let nro = ep.replace('https://rickandmortyapi.com/api/episode/','')
           return(
-              <Link to={'/clase39/episode/'+nro} key={nro}>
+              <Link to={'/RickAndMorty/episode/'+nro} key={nro}>
               <button key={nro} className={episodes ? 'm-4 btn btn-warning' : 'd-none'}>{'Episode: '+ nro}</button>
               </Link>)
               

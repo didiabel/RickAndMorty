@@ -1,10 +1,7 @@
 import axios from "axios";
 import { useContext, useEffect, useState } from "react";
 import BarWave from "react-cssfx-loading/lib/BarWave";
-import { Link } from "react-router-dom";
-import { GetApi } from "../../GlobalHooks/HTTP";
 import { Context } from "../../store/ContextProvider/ContextProvider";
-import CardsAllEpisodes from "../CardsAllEpisodes";
 import CardsLocations from "../CardsLocations";
 
 const Locations = () => {

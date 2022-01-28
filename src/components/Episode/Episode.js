@@ -34,7 +34,7 @@ const Episode = () => {
              </div>
                  </div>
                  <div className="d-flex justify-content-around mt-5">
-                 <Link to={'/clase39/'} ><button className="btn btn-primary">Volver</button></Link>
+                 <Link to={'/RickAndMorty/'} ><button className="btn btn-primary">Volver</button></Link>
                  <button className="btn btn-success h-25" onClick={()=>getEpisodes()}>Characters</button>
                  <button className={characters ? ' btn btn-danger' : 'd-none'} onClick={()=>hideEpisodes()}> Esconder</button>
                  </div>

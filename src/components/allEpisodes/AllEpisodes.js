@@ -38,7 +38,7 @@ const AllEpisodes = () => {
     };
   return (
     <div className="border">
-        <h1 className="text-center border-bottom m-4 p-4">Episodes</h1>
+        <h1 className="text-center border-bottom m-4 p-4">Episodios</h1>
       {loading ? (
         <div className="mt-5 mb-5">
           <div className="d-flex justify-content-around align-content-center">

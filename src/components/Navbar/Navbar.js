@@ -10,7 +10,7 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg navbar-light bg-dark d-flex ">
         <div className="container-fluid">
           <Link
-            to={"/clase39"}
+            to={"/RickAndMorty/"}
             className="navbar-brand text-white m-3"
             href="#"
           >
@@ -32,7 +32,7 @@ const Navbar = () => {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
               <li className="nav-item">
                 <Link
-                  to={"/clase39/allEpisodes"}
+                  to={"/RickAndMorty/allEpisodes"}
                   className="nav-link text-white"
                   href="#"
                 >
@@ -41,7 +41,7 @@ const Navbar = () => {
               </li>
               <li className="nav-item">
                 <Link
-                  to={"/clase39/locations"}
+                  to={"/RickAndMorty/locations"}
                   className="nav-link text-white"
                   href="#"
                 >

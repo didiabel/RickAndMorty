@@ -13,7 +13,7 @@ const Personaje = (props) => {
               <p className="card-title">Gender {cadaUno.gender}</p>
               <p className="card-title">Location: {cadaUno.location.name}</p>
               <p className="card-title">Origin: {cadaUno.origin.name}</p>
-              <Link to={'/clase39/info/'+cadaUno.id} itemProp={cadaUno}><button className="btn btn-primary">Info</button></Link>
+              <Link to={'/RickAndMorty/info/'+cadaUno.id} itemProp={cadaUno}><button className="btn btn-primary">Info</button></Link>
             </div>
           </div>
      );
