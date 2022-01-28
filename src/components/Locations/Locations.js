@@ -5,7 +5,7 @@ import { Context } from "../../store/ContextProvider/ContextProvider";
 import CardsLocations from "../CardsLocations";
 
 const Locations = () => {
-    const {search, setSearch} = useContext(Context)
+    const {search} = useContext(Context)
 
     const [pagInicioNro, setPagInicioNro] = useState(1);
     const [dataToShow, setDataToShow] = useState([]);

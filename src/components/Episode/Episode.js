@@ -1,12 +1,14 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { GetApi } from "../../GlobalHooks/HTTP";
 import Char from "../char/char";
 import BarWave from "react-cssfx-loading/lib/BarWave";
+import { Context } from "../../store/ContextProvider/ContextProvider";
 
 
 const Episode = () => {
     const {nro} = useParams()
+    const {search} = useContext(Context)
     const [characters, setCharacters] = useState(true)
     const [data, loading] = GetApi('https://rickandmortyapi.com/api/episode/'+nro)
 
@@ -38,6 +40,8 @@ const Episode = () => {
                  <button className="btn btn-success h-25" onClick={()=>getEpisodes()}>Characters</button>
                  <button className={characters ? ' btn btn-danger' : 'd-none'} onClick={()=>hideEpisodes()}> Esconder</button>
                  </div>
+                 <div className="d-flex justify-content-around">
+                 <div className="d-flex justify-content-between">
                  <div className={characters? "container d-flex flex-wrap  border mt-4" : 'd-none'}>
         
              {data.characters.map(char => {
@@ -45,7 +49,8 @@ const Episode = () => {
                  <Char key={char} Url={char}/>)
              })}
             
-            
+            </div>
+            </div>
              </div>
          
         </div>

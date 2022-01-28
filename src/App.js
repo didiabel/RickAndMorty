@@ -1,6 +1,7 @@
 import './App.css';
 import Personajes from './components/personajes/Personajes';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import {
   BrowserRouter as Router,
   Routes,
